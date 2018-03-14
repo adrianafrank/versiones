@@ -125,9 +125,45 @@
 				  </div>
     			</div>
     		</div>
+    		<div class="row">
+    			<div class="col m12">
+    			  <div class="chips"></div>
+				  <div class="chips chips-initial"></div>
+				  <div class="chips chips-placeholder"></div>
+				  <div class="chips chips-autocomplete"></div>
+    			</div>
+    		</div>
     	</div>
     </section>
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="materialize/js/materialize.js"></script>
+	<script>
+		 $('.chips').material_chip();
+		  $('.chips-initial').material_chip({
+		    data: [{
+		      tag: 'Apple',
+		    }, {
+		      tag: 'Microsoft',
+		    }, {
+		      tag: 'Google',
+		    }],
+		  });
+		  $('.chips-placeholder').material_chip({
+		    placeholder: 'Enter a tag',
+		    secondaryPlaceholder: '+Tag',
+		  });
+		  $('.chips-autocomplete').material_chip({
+		    autocompleteOptions: {
+		      data: {
+		        'Apple': null,
+		        'Microsoft': null,
+		        'Google': null
+		      },
+		      limit: Infinity,
+		      minLength: 1
+		    }
+		  });
+		      
+	</script>
 </body>
 </html>
