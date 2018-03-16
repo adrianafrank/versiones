@@ -25,7 +25,24 @@
 	        <li><a href="mobile.html">Mobile</a></li>
 	      </ul>
 	    </div>
-	  </nav>       
+	  </nav>
+	 <div class="row">
+	 <div class="col m3">
+	 	<h5>Más Visitados</h5>
+	 	<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/1000/400/nature/4">
+	 	 <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/1000/400/nature/3">
+	 	  <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/1000/400/nature/2">
+	 </div>    
+	 	<div class="col m9">
+	 		<div class="carousel">
+	 		    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/400/400/nature/1"></a>
+	 		    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/400/400/nature/2"></a>
+	 		    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/400/400/nature/3"></a>
+	 		    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/400/400/nature/4"></a>
+	 		    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/400/400/nature/5"></a>
+	 		 </div> 
+	 	</div>
+	 </div>
 	<div class="row">
 		<div class="col m3 s6">
 		 <div class="card">
@@ -123,6 +140,7 @@
 			  </div>       
 		</div>
 	</div>
+
         <footer class="page-footer  deep-orange darken-1">
           <div class="container">
             <div class="row">
@@ -152,6 +170,11 @@
 	<script src="materialize/js/materialize.js"></script>
 	<script>
 		$(".button-collapse").sideNav();
+	</script>
+	<script>
+		    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
 	</script>
 </body>
 </html>
